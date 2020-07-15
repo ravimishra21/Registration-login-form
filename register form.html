@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ravi Mishra vns </title>
+	<style type="text/css" >
+
+		#a1
+		{
+			color:white;
+			background-color: red;
+			text-align: center;
+		}
+		#c1
+		{
+			color:blue;
+			background-color: pink;
+		}
+
+		#c2
+		{
+			color:blue;
+			background-color: pink;
+		}
+		#c4
+		{
+			color:blue;
+			background-color: pink;
+		}
+		#b1
+		{
+			color:blue;
+			background-color: pink;
+			text-align: center;
+		}
+
+		#t2
+		{
+	
+			color:blue;
+			background-color: pink;
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+		function Validate()
+		{
+			var uname=document.getElementById("c1").value;
+			var pwd=document.getElementById("c2").value;
+			var cpwd=document.getElementById("c3").value;
+			var mob=document.getElementById("c4").value;
+			var gmail=document.getElementById("c5").value;
+
+
+			var x="";
+			if(uname.length==0)
+			{
+				x="Username not must be empty"+"<br>";
+			}
+			if(pwd.length==0)
+			{
+				x=x+"password not must be empty"+"<br>";
+				
+			}
+			if(uname==pwd)
+			{
+				x=x+"password & username not must be same"+"<br>";
+				
+			}
+			if(pwd!=cpwd)
+			{
+				x=x+"Confirm Password not matching"+"<br>";
+				
+			}
+			if(mob.length!=10)
+			{
+				x=x+"invalid mobile number"+"<br>";
+				
+			}
+			if(gmail.length==0)
+			{
+				x=x+"not given proper gmail"+"<br>";
+			}
+			document.getElementById("s1").innerHTML=x;
+
+		}
+
+	</script>
+</head>
+<body>
+
+	<h1 id="a1">Register</h1>
+	<table height="400" width="600" bgcolor="yellow" border="5" id="t1" m-auto >
+		<tr>
+			<td>Enter your name</td>
+			<td><input type ="text" id="c1" placeholder="your name"></td>
+		</tr>
+		<tr>
+			<td>Enter password</td>
+			<td><input type ="password" id="c2" placeholder="your password"></td>
+		</tr>
+		<tr>
+			<td>Confirm password</td>
+			<td><input type ="password" id="c3" placeholder="your password"></td>
+		</tr>
+		<tr>
+			<td>mobile no.</td>
+			<td><input type ="number" id="c4" placeholder="your mobile"></td>
+		</tr>
+		<tr>
+			<td>Enter your gmail</td>
+			<td><input type ="gmail" id="c5" placeholder="your gmail"></td>
+		</tr>
+		</table>
+		<table height=100 width="600" bgcolor="yellow" border="5" id="t2">
+		<tr >
+			<td>
+		<input type="button" id="b1" value="Submit" onclick="Validate()" >
+			</td>
+
+		</tr>
+		<tr>
+			<td>
+				<a href="login form.html">After submit go to Login form</a><br>
+
+			</td>>
+		</tr>>
+		<tr><td>
+			<span id="s1"></span>
+			</td>
+		</tr>
+	</table>
+
+</body>
+</html>
